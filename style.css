@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background: #a3f792;
+    color: #fff;
+    padding: 1rem;
+    position: relative; /* Membuat header sebagai kontainer relatif */
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Menyebar logo dan menu navigasi */
+  }
+  
+  #logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  #logo {
+    height: 100px; /* Sesuaikan ukuran logo */
+    margin-right: 1rem; /* Jarak antara logo dan menu navigasi */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: all 0.3s ease; /* Transisi halus untuk perubahan efek */
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus {
+    color: #f39c12; /* Warna teks saat hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Warna latar belakang saat hover */
+    border-radius: 5px; /* Membuat sudut membulat pada latar belakang */
+    transform: translateY(-3px); /* Efek timbul */
+  }
+  
+  nav ul li a:active {
+    color: #e67e22; /* Warna teks saat diklik */
+    background-color: rgba(255, 255, 255, 0.3); /* Warna latar belakang saat diklik */
+    transform: translateY(1px); /* Efek sedikit tenggelam saat diklik */
+  }
+  
+  #hero {
+    text-align: center;
+    padding: 2rem;
+    background: #ecf0f1;
+  }
+  
+  #services-preview {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .service {
+    margin: 1rem 0;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background:#a3f792;
+    color: #080808;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  form button {
+    padding: 0.5rem 1rem;
+    background: #a3f792;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  #social-media {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  #social-media h3 {
+    margin-bottom: 1rem;
+  }
+  
+  #social-media a {
+    color: #3498db;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  #social-media a:hover {
+    color: #2980b9;
+  }
