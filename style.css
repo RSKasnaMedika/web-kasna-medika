@@ -75,6 +75,12 @@ nav ul li a:active {
   margin: 1rem 0;
 }
 
+/* Gambar dalam layanan */
+.service img {
+  max-width: 100%;
+  height: auto;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
