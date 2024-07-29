@@ -66,8 +66,9 @@ nav ul li a:active {
   background: #ecf0f1;
 }
 #fo{
-  max-width: 15%;
+  max-width: 5%;
   height: auto;
+  display: center;
 }
 
 #services-preview {
