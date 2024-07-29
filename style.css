@@ -65,10 +65,7 @@ nav ul li a:active {
   padding: 2rem;
   background: #ecf0f1;
 }
-.index img.fo{
-  max-width: 15%;
-  height: auto;
-}
+
 #services-preview {
   text-align: center;
   padding: 2rem;
@@ -83,7 +80,10 @@ nav ul li a:active {
   max-width: 15%;
   height: auto;
 }
-
+.index img.fo{
+  max-width: 5%;
+  height: auto;
+}
 footer {
   text-align: center;
   padding: 1rem;
