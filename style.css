@@ -66,6 +66,11 @@ nav ul li a:active {
   background: #ecf0f1;
 }
 
+#fo{
+  max-width: 75%;
+  height: auto;
+}
+
 #services-preview {
   text-align: center;
   padding: 2rem;
@@ -80,10 +85,7 @@ nav ul li a:active {
   max-width: 15%;
   height: auto;
 }
-#fo{
-  max-width: 75%;
-  height: auto;
-}
+
 
 footer {
   text-align: center;
