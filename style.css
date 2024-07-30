@@ -182,5 +182,41 @@ form button {
     padding: 0.5rem;
     font-size: 0.9rem;
   }
+  @media (max-width: 375px) { /* iPhone 6/7/8, iPhone SE (2nd generation) */
+    header {
+      padding: 0.5rem;
+    }
   
+    #hero, #services-preview, footer, form {
+      padding: 0.5rem;
+    }
+  
+    #logo {
+      height: 50px;
+    }
+  
+    nav ul li a {
+      padding: 0.3rem;
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 320px) { /* iPhone 5/5s/5c */
+    header {
+      padding: 0.3rem;
+    }
+  
+    #hero, #services-preview, footer, form {
+      padding: 0.3rem;
+    }
+  
+    #logo {
+      height: 40px;
+    }
+  
+    nav ul li a {
+      padding: 0.2rem;
+      font-size: 0.7rem;
+    }
+  }
 }
