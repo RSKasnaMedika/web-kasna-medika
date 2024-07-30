@@ -69,6 +69,7 @@ nav ul li a:active {
 #fo{
   max-width: 75%;
   height: auto;
+  text-align: center;
 }
 
 #services-preview {
