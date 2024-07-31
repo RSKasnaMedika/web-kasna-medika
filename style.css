@@ -75,16 +75,10 @@ nav ul li a:active {
   margin: 1rem 0;
 }
 
-/* Gambar dalam layanan */
-.service img {
-  max-width: 100%;
-  height: auto;
-}
-
 footer {
   text-align: center;
   padding: 1rem;
-  background: #a3f792;
+  background:#a3f792;
   color: #080808;
 }
 
@@ -111,7 +105,6 @@ form button {
   border: none;
   cursor: pointer;
 }
-
 #social-media {
   text-align: center;
   margin-top: 2rem;
@@ -131,48 +124,4 @@ form button {
 
 #social-media a:hover {
   color: #2980b9;
-}
-
-/* Media Queries for Responsiveness */
-
-@media (max-width: 768px) {
-  #logo {
-    height: 80px; /* Sesuaikan ukuran logo untuk layar lebih kecil */
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 0.5rem 0;
-  }
-
-  nav ul li a {
-    padding: 0.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    padding: 0.5rem;
-  }
-
-  #hero, #services-preview, footer, form {
-    padding: 1rem;
-  }
-
-  #logo {
-    height: 60px; /* Sesuaikan ukuran logo untuk layar lebih kecil */
-  }
-
-  nav ul li {
-    margin: 0.5rem 0;
-  }
-
-  nav ul li a {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
 }
