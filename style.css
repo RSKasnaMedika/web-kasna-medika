@@ -74,6 +74,7 @@ nav ul li a:active {
 .service {
   margin: 1rem 0;
   display: flex;
+  flex-direction: column;
   text-align: left;
   
 }
@@ -81,7 +82,7 @@ nav ul li a:active {
 .service img {
   max-width: 50%;
   height: auto;
-  
+  margin: 0 auto; /* Rata tengah horizontal jika Flexbox tidak digunakan */
 }
 #fo  {
   max-width: 80%;
