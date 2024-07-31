@@ -173,12 +173,4 @@ footer {
   #services-preview {
     padding: 0.3rem;
   }
-  /* Untuk flexbox, prefix bisa membantu di beberapa versi lama */
-nav {
-  display: -webkit-flex; /* Safari */
-  display: -moz-flex;    /* Firefox */
-  display: -ms-flex;     /* IE10 */
-  display: flex;
-}
-
 }
