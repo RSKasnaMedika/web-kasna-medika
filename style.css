@@ -67,7 +67,7 @@ nav ul li a:active {
 }
 
 #services-preview {
-  text-align: center;
+  text-align: left;
   padding: 2rem;
 }
 
@@ -75,6 +75,7 @@ nav ul li a:active {
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
+  text-align: left;
   align-items: center; /* Rata tengah horizontal */
 }
 
