@@ -74,9 +74,13 @@ nav ul li a:active {
 .service {
   margin: 1rem 0;
 }
+.service img{
+  max-width: 70%;
+  height: auto;
+}
 
 #services-preview img {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
 }
 
