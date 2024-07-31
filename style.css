@@ -80,9 +80,10 @@ nav ul li a:active {
 }
 
 .service img {
-  max-width: 50%;
-  height: auto;
-  margin: 0 auto; /* Rata tengah horizontal jika Flexbox tidak digunakan */
+  display: block; /* Menghapus ruang di bawah gambar */
+  margin: 0; /* Mengatur margin gambar ke 0 */
+  max-width: 100%; /* Agar gambar responsif */
+  height: auto; /* Menjaga proporsi gambar */
 }
 #fo  {
   max-width: 80%;
