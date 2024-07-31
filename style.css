@@ -75,6 +75,15 @@ nav ul li a:active {
   margin: 1rem 0;
 }
 
+#services-preview img {
+  max-width: 100%;
+  height: auto;
+}
+
+#fo {
+  margin: 2rem 0;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -124,4 +133,4 @@ form button {
 
 #social-media a:hover {
   color: #2980b9;
-}
+} 
