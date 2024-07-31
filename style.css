@@ -1,3 +1,4 @@
+/* Base styles for mobile first */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,72 +8,46 @@ header {
   background: #a3f792;
   color: #fff;
   padding: 1rem;
-  position: relative; /* Membuat header sebagai kontainer relatif */
+  position: relative;
 }
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between; /* Menyebar logo dan menu navigasi */
-}
-
-#logoContainer {
-  display: flex;
+  flex-direction: column; /* Stack logo and nav items vertically */
   align-items: center;
 }
 
 #logo {
-  height: 100px; /* Sesuaikan ukuran logo */
-  margin-right: 1rem; /* Jarak antara logo dan menu navigasi */
+  height: 80px; /* Adjust logo size for mobile */
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
+  flex-direction: column; /* Stack nav items vertically */
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 1rem;
+  margin: 0.5rem 0; /* Adjust spacing between nav items */
 }
 
 nav ul li a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
   padding: 0.5rem 1rem;
-  display: inline-block;
-  transition: all 0.3s ease; /* Transisi halus untuk perubahan efek */
-}
-
-nav ul li a:hover,
-nav ul li a:focus {
-  color: #f39c12; /* Warna teks saat hover */
-  background-color: rgba(255, 255, 255, 0.2); /* Warna latar belakang saat hover */
-  border-radius: 5px; /* Membuat sudut membulat pada latar belakang */
-  transform: translateY(-3px); /* Efek timbul */
-}
-
-nav ul li a:active {
-  color: #e67e22; /* Warna teks saat diklik */
-  background-color: rgba(255, 255, 255, 0.3); /* Warna latar belakang saat diklik */
-  transform: translateY(1px); /* Efek sedikit tenggelam saat diklik */
+  font-size: 1rem; /* Adjust font size for readability */
 }
 
 #hero {
   text-align: center;
-  padding: 2rem;
-  background: #ecf0f1;
+  padding: 1.5rem; /* Adjust padding for smaller screens */
 }
 
 #services-preview {
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .service {
-  margin: 1rem 0;
+  margin: 0.5rem 0; /* Adjust spacing between services */
 }
 
 footer {
@@ -83,7 +58,7 @@ footer {
 }
 
 form {
-  max-width: 600px;
+  max-width: 90%; /* Adjust width for mobile */
   margin: 0 auto;
 }
 
@@ -105,23 +80,52 @@ form button {
   border: none;
   cursor: pointer;
 }
+
 #social-media {
   text-align: center;
-  margin-top: 2rem;
-}
-
-#social-media h3 {
-  margin-bottom: 1rem;
+  margin-top: 1.5rem; /* Adjust margin for mobile */
 }
 
 #social-media a {
-  color: #3498db;
-  font-size: 1.5rem;
-  margin: 0 0.5rem;
-  text-decoration: none;
-  transition: color 0.3s;
+  font-size: 1.2rem; /* Adjust icon size for mobile */
 }
 
-#social-media a:hover {
-  color: #2980b9;
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row; /* Stack logo and nav items horizontally */
+    justify-content: space-between;
+  }
+
+  #logo {
+    height: 100px;
+  }
+
+  nav ul {
+    flex-direction: row; /* Align nav items horizontally */
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  #hero {
+    padding: 2rem;
+  }
+
+  #services-preview {
+    padding: 2rem;
+  }
+
+  form {
+    max-width: 600px;
+  }
+
+  #social-media {
+    margin-top: 2rem;
+  }
+
+  #social-media a {
+    font-size: 1.5rem;
+  }
 }
