@@ -84,7 +84,7 @@ nav ul li a:active {
   margin: 0 auto; /* Rata tengah horizontal jika Flexbox tidak digunakan */
 }
 #fo  {
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
   margin: 0 auto;
 }
