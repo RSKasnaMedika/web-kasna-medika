@@ -76,7 +76,7 @@ nav ul li a:active {
   display: flex;
   flex-direction: column;
   text-align: left;
-  align-items: center; /* Rata tengah horizontal */
+  
 }
 
 .service img {
