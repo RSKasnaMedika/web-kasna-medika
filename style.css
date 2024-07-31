@@ -66,6 +66,12 @@ nav ul li a:active {
   background: #ecf0f1;
 }
 
+#fo{
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto; /* Rata tengah horizontal jika Flexbox tidak digunakan */
+}
+
 #services-preview {
   text-align: center;
   padding: 2rem;
@@ -73,16 +79,14 @@ nav ul li a:active {
 
 .service {
   margin: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Rata tengah horizontal */
 }
 
+/* Gambar dalam layanan */
 .service img {
-  max-width: 100%;
+  max-width: 15%;
   height: auto;
-  margin: 0 auto; /* Rata tengah horizontal jika Flexbox tidak digunakan */
 }
+
 
 footer {
   text-align: center;
@@ -140,7 +144,7 @@ form button {
 
 @media (max-width: 768px) {
   #logo {
-    height: 80px; /* Sesuaikan ukuran logo untuk layar lebih kecil */
+    height: 50px;
   }
 
   nav ul {
@@ -167,7 +171,7 @@ form button {
   }
 
   #logo {
-    height: 60px; /* Sesuaikan ukuran logo untuk layar lebih kecil */
+    height: 40px;
   }
 
   nav ul li {
@@ -179,3 +183,42 @@ form button {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 375px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  #hero, #services-preview, footer, form {
+    padding: 0.5rem;
+  }
+
+  #logo {
+    height: 30px;
+  }
+
+  nav ul li a {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    padding: 0.3rem;
+  }
+
+  #hero, #services-preview, footer, form {
+    padding: 0.3rem;
+  }
+
+  #logo {
+    height: 20px;
+  }
+
+  nav ul li a {
+    padding: 0.2rem;
+    font-size: 0.7rem;
+  }
+}
+
