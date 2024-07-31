@@ -82,7 +82,7 @@ nav ul li a:active {
 .service img {
   display: block; /* Menghapus ruang di bawah gambar */
   margin: 0; /* Mengatur margin gambar ke 0 */
-  max-width: 100%; /* Agar gambar responsif */
+  max-width: 50%; /* Agar gambar responsif */
   height: auto; /* Menjaga proporsi gambar */
 }
 #fo  {
