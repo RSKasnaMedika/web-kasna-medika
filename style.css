@@ -79,11 +79,15 @@ nav ul li a:active {
 }
 
 .service img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   margin: 0 auto; /* Rata tengah horizontal jika Flexbox tidak digunakan */
 }
-
+#fo  {
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
 footer {
   text-align: center;
   padding: 1rem;
