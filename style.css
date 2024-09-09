@@ -33,13 +33,14 @@ header {
 }
 
 #logo {
-  height: 50px;
+  height: 80px; /* Ubah ukuran logo di sini */
   transition: transform 0.3s ease;
 }
 
 #logoContainer:hover #logo {
-  transform: scale(1.05);
+  transform: scale(1.1); /* Menyesuaikan skala transformasi untuk efek hover */
 }
+
 
 /* Navbar styling */
 #navbar {
