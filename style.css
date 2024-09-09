@@ -15,6 +15,8 @@ header {
   width: 100%;
   z-index: 1000;
   padding: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
 /* Container untuk logo dan nav */
@@ -25,50 +27,28 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 /* Logo styling */
 #logoContainer {
   flex-shrink: 0;
+  margin-left: 0; /* Pastikan logo berada di pojok kiri */
 }
 
 #logo {
-  height: 120px; /* Memperbesar ukuran logo */
-  width: auto; /* Memastikan rasio aspek gambar tetap terjaga */
+  height: 120px; /* Ukuran logo */
+  width: auto; /* Menjaga rasio aspek gambar */
   transition: transform 0.3s ease;
-}
-
-#logoContainer:hover #logo {
-  transform: scale(1.15); /* Menyesuaikan skala transformasi untuk efek hover */
 }
 
 /* Navbar styling */
 #navbar {
   display: flex;
   align-items: center;
-  position: relative; /* Posisi relatif untuk menu hamburger */
-}
-
-#nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-#nav-links li {
-  margin-left: 30px;
-}
-
-#nav-links li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-#nav-links li a:hover {
-  color: #ffa601;
+  flex-grow: 1; /* Membuat navbar mengisi ruang yang tersisa */
+  justify-content: flex-end; /* Menempatkan navbar di sisi kanan */
+  position: relative;
 }
 
 /* Hamburger menu for mobile */
