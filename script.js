@@ -8,7 +8,7 @@ const qualityChart = new Chart(ctx, {
       label: 'Skor Mutu',
       data: [85, 90, 80, 75],
       backgroundColor: ['#FFA601', '#98FB98', '#FFA601', '#98FB98'],
-      borderColor: ['#FFA601', '#ffffff', '#000000', '#98FB98'],
+      borderColor: ['#FFA601', '#CA3433', '#00FFFF', '#98FB98'],
       borderWidth: 1
     }]
   },
