@@ -33,20 +33,19 @@ header {
 }
 
 #logo {
-  height: 80px; /* Ubah ukuran logo di sini */
+  height: 80px;
   transition: transform 0.3s ease;
 }
 
 #logoContainer:hover #logo {
-  transform: scale(1.1); /* Menyesuaikan skala transformasi untuk efek hover */
+  transform: scale(1.1);
 }
-
 
 /* Navbar styling */
 #navbar {
   display: flex;
   align-items: center;
-  position: relative; /* Posisi relatif untuk menu hamburger */
+  position: relative;
 }
 
 #nav-links {
@@ -93,7 +92,7 @@ header {
 /* Responsive untuk mobile */
 @media (max-width: 768px) {
   #nav-links {
-    display: none; /* Sembunyikan tautan navigasi pada layar kecil */
+    display: none;
     position: absolute;
     top: 100%;
     right: 0;
@@ -106,7 +105,7 @@ header {
   }
 
   #nav-links.show {
-    display: flex; /* Tampilkan tautan navigasi ketika hamburger menu diklik */
+    display: flex;
   }
 
   #nav-links li {
@@ -118,7 +117,7 @@ header {
   }
 
   #navbar {
-    justify-content: space-between; /* Logo dan hamburger menu berada di kiri dan kanan */
+    justify-content: space-between;
   }
 }
 
