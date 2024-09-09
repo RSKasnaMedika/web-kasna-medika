@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RS Kasna Medika - Beranda</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header>
@@ -14,13 +15,18 @@
           <img src="logokasna.png" alt="RS Kasna Medika Logo" id="logo">
         </a>
       </div>
-      <nav>
+      <nav id="navbar">
         <ul id="nav-links">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="service.html">Layanan</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </div>
   </header>
@@ -28,15 +34,31 @@
   <main>
     <section id="hero">
       <img src="rskasna.jpg" alt="RS Kasna Medika" id="hospitalImage">
-      <div>
+      <div id="hero-text">
         <h1>Selamat Datang di RS Kasna Medika</h1>
         <p>Memberikan pelayanan kesehatan terbaik untuk Anda dan keluarga dengan moto Peduli & Melayani.</p>
       </div>
     </section>
-  </main>
+    
+    <section id="services-preview">
+      <h2>Layanan Kami</h2>
+      <p>Periksa layanan kesehatan kami yang berkualitas dan profesional.</p>
+      <div id="service-image">
+        <img src="fo.jpg" alt="Layanan RS Kasna Medika">
+      </div>
+      <a href="service.html" id="services-link">Lihat Layanan Kami</a>
+    </section>
 
+    <section id="chart-section">
+      <h2>Penilaian Mutu Rumah Sakit</h2>
+      <canvas id="qualityChart" width="400" height="200"></canvas>
+    </section>
+  </main>
+  
   <footer>
     <p>&copy; 2024 RS Kasna Medika</p>
   </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>

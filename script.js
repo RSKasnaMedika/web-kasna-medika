@@ -1,49 +1,43 @@
-// Add interactivity here if needed
-
+// JavaScript untuk menu hamburger
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Website loaded');
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('show');
+    hamburger.classList.toggle('active');
   });
-  document.addEventListener('DOMContentLoaded', function () {
-    var ctx = document.getElementById('qualityChart').getContext('2d');
-    var qualityChart = new Chart(ctx, {
-      type: 'bar', // tipe grafik: bar, line, pie, dll.
-      data: {
-        labels: ['Kebersihan', 'Pelayanan', 'Kualitas Perawatan', 'Fasilitas', 'Dokter'],
-        datasets: [{
-          label: 'Penilaian Mutu Rumah Sakit',
-          data: [85, 90, 80, 75, 95], // contoh data penilaian
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)'
-          ],
-          borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)'
-          ],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
+
+  // JavaScript untuk Chart.js
+  var ctx = document.getElementById('qualityChart').getContext('2d');
+  var qualityChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Kepuasan', 'Kecepatan', 'Kualitas', 'Biaya'],
+      datasets: [{
+        label: 'Penilaian Mutu',
+        data: [80, 70, 90, 60],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
         }
       }
-    });
-    const hamburger = document.querySelector('.hamburger');
-const navLinks = document.getElementById('nav-links');
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navLinks.classList.toggle('show');
-});
-
+    }
   });
-  
+});

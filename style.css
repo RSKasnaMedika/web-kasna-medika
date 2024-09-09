@@ -1,3 +1,10 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Header Styling */
 header {
   background-color: #98fb98;
@@ -35,14 +42,17 @@ header {
 }
 
 /* Navbar styling */
-nav {
-  margin-left: auto;
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative; /* Posisi relatif untuk menu hamburger */
 }
 
 #nav-links {
   list-style: none;
   display: flex;
-  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
 }
 
 #nav-links li {
@@ -60,19 +70,156 @@ nav {
   color: #ffa601;
 }
 
+/* Hamburger menu for mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  background-color: #333;
+  height: 3px;
+  width: 100%;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
 /* Responsive untuk mobile */
 @media (max-width: 768px) {
-  .container {
+  #nav-links {
+    display: none; /* Sembunyikan tautan navigasi pada layar kecil */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
-  #nav-links {
-    flex-direction: column;
-    align-items: center;
+  #nav-links.show {
+    display: flex; /* Tampilkan tautan navigasi ketika hamburger menu diklik */
   }
 
   #nav-links li {
-    margin: 10px 0;
+    margin: 15px 0;
   }
+
+  .hamburger {
+    display: flex;
+  }
+
+  #navbar {
+    justify-content: space-between; /* Logo dan hamburger menu berada di kiri dan kanan */
+  }
+}
+
+/* Efek animasi hamburger menu */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Hero Section Styling */
+#hero {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+#hospitalImage {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#hero-text {
+  margin-left: 20px;
+}
+
+#hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#hero-text p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Services Preview Styling */
+#services-preview {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#services-preview h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#services-preview p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#service-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#services-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #ffa601;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#services-link:hover {
+  background-color: #e68a00;
+}
+
+/* Chart Section Styling */
+#chart-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#chart-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #98fb98;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+  margin: 0;
+  color: #333;
 }
