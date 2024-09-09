@@ -1,7 +1,7 @@
-// Chart.js Script
 document.addEventListener('DOMContentLoaded', function() {
   console.log('Document Loaded');
-  
+
+  // Chart.js Script
   const ctx = document.getElementById('qualityChart').getContext('2d');
   const qualityChart = new Chart(ctx, {
     type: 'bar',
@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
-  
+
   // Hamburger Menu Script
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('#nav-links');
-  
+
   if (hamburger) {
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('active');
