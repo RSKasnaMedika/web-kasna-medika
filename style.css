@@ -9,17 +9,16 @@ header {
   z-index: 1000;
   padding: 10px 0;
   display: flex;
-  justify-content: space-between; /* Membuat elemen di dalam header berjauhan */
+  justify-content: space-between; /* Logo dan navigasi berjauhan di posisi kiri dan kanan */
   align-items: center;
 }
 
-/* Container utama */
+/* Container untuk elemen logo dan navigasi */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* Elemen rata kiri */
   align-items: center;
   padding: 0 20px;
 }
@@ -42,20 +41,17 @@ header {
 
 /* Navbar styling */
 nav {
-  display: flex;
-  justify-content: center; /* Menyusun navbar di tengah */
-  align-items: center;
-  flex: 1; /* Membuat nav memenuhi sisa ruang antara logo dan kanan */
+  margin-left: auto; /* Posisi navigasi di sebelah kanan logo */
 }
 
 #nav-links {
   list-style: none;
   display: flex;
-  justify-content: center; /* Tautan rata tengah */
+  justify-content: flex-start; /* Link navigasi rata kiri di sebelah logo */
 }
 
 #nav-links li {
-  margin-left: 30px;
+  margin-left: 30px; /* Spasi antar link */
 }
 
 #nav-links li a {
@@ -72,15 +68,12 @@ nav {
 /* Responsive untuk mobile */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Mengubah menjadi kolom pada layar kecil */
-  }
-
-  nav {
-    margin-top: 15px; /* Memberi jarak di atas navigasi */
+    flex-direction: column; /* Mengubah layout menjadi kolom di layar kecil */
+    align-items: center; /* Logo dan navigasi di tengah di layar kecil */
   }
 
   #nav-links {
-    flex-direction: column;
+    flex-direction: column; /* Tautan vertikal di layar kecil */
     align-items: center;
   }
 
