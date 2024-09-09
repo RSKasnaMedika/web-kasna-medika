@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'rgba(75, 192, 192, 1)',
             'rgba(153, 102, 255, 1)'
           ],
-          borderWidth: 0,5
+          borderWidth: 1
         }]
       },
       options: {
