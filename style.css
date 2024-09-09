@@ -1,4 +1,4 @@
-/* Container untuk header */
+/* Header Styling */
 header {
   background-color: #98fb98;
   border-bottom: 1px solid #e0e0e0;
@@ -8,26 +8,21 @@ header {
   width: 100%;
   z-index: 1000;
   padding: 10px 0;
-  display: flex;
-  justify-content: space-between; /* Logo dan navigasi berjauhan di posisi kiri dan kanan */
-  align-items: center;
 }
 
-/* Container untuk elemen logo dan navigasi */
+/* Container untuk logo dan nav */
 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: flex-start; /* Elemen rata kiri */
-  align-items: center;
   padding: 0 20px;
 }
 
 /* Logo styling */
 #logoContainer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Logo tetap di kiri */
+  flex-shrink: 0;
 }
 
 #logo {
@@ -41,17 +36,17 @@ header {
 
 /* Navbar styling */
 nav {
-  margin-left: auto; /* Posisi navigasi di sebelah kanan logo */
+  margin-left: auto;
 }
 
 #nav-links {
   list-style: none;
   display: flex;
-  justify-content: flex-start; /* Link navigasi rata kiri di sebelah logo */
+  justify-content: flex-start;
 }
 
 #nav-links li {
-  margin-left: 30px; /* Spasi antar link */
+  margin-left: 30px;
 }
 
 #nav-links li a {
@@ -68,12 +63,12 @@ nav {
 /* Responsive untuk mobile */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Mengubah layout menjadi kolom di layar kecil */
-    align-items: center; /* Logo dan navigasi di tengah di layar kecil */
+    flex-direction: column;
+    align-items: center;
   }
 
   #nav-links {
-    flex-direction: column; /* Tautan vertikal di layar kecil */
+    flex-direction: column;
     align-items: center;
   }
 
