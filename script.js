@@ -17,19 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
       datasets: [{
         label: 'Penilaian Mutu',
         data: [80, 70, 90, 60],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)'
-        ],
-        borderWidth: 1
+        backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#FFC300'], // Warna baru untuk setiap bar
+        borderColor: ['#C70039', '#28B463', '#1F618D', '#FF5733'], // Tambahkan warna border jika diperlukan
+        borderWidth: 2 // Sesuaikan ketebalan border
       }]
     },
     options: {
