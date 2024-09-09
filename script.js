@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       datasets: [{
         label: 'Penilaian Mutu',
         data: [80, 70, 90, 60],
-        backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#FFC300'], // Warna baru untuk setiap bar
+        backgroundColor: ['#FF5733', '#000000', '#3357FF', '#FFC300'], // Warna baru untuk setiap bar
         borderColor: ['#C70039', '#28B463', '#1F618D', '#FF5733'], // Tambahkan warna border jika diperlukan
         borderWidth: 2 // Sesuaikan ketebalan border
       }]
