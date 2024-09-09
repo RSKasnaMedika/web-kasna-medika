@@ -37,5 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     });
+    const hamburger = document.querySelector('.hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('show');
+});
+
   });
   
