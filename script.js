@@ -1,25 +1,31 @@
-// JavaScript untuk menu hamburger
 document.addEventListener('DOMContentLoaded', function() {
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.getElementById('nav-links');
+  console.log('Website loaded');
+});
 
-  hamburger.addEventListener('click', function() {
-    navLinks.classList.toggle('show');
-    hamburger.classList.toggle('active');
-  });
-
-  // JavaScript untuk Chart.js
+document.addEventListener('DOMContentLoaded', function () {
   var ctx = document.getElementById('qualityChart').getContext('2d');
   var qualityChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'bar', // tipe grafik: bar, line, pie, dll.
     data: {
-      labels: ['Kepuasan', 'Kecepatan', 'Kualitas', 'Biaya'],
+      labels: ['Kebersihan', 'Pelayanan', 'Kualitas Perawatan', 'Fasilitas', 'Dokter'],
       datasets: [{
-        label: 'Penilaian Mutu',
-        data: [80, 70, 90, 60],
-        backgroundColor: ['#FF5733', '#000000', '#3357FF', '#FFC300'], // Warna baru untuk setiap bar
-        borderColor: ['#C70039', '#28B463', '#1F618D', '#FF5733'], // Tambahkan warna border jika diperlukan
-        borderWidth: 2 // Sesuaikan ketebalan border
+        label: 'Penilaian Mutu Rumah Sakit',
+        data: [85, 90, 80, 75, 95], // contoh data penilaian
+        backgroundColor: [
+          '#FF6347', // Warna baru untuk 'Kebersihan' (Tomato)
+          '#4682B4', // Warna baru untuk 'Pelayanan' (Steel Blue)
+          '#FFD700', // Warna baru untuk 'Kualitas Perawatan' (Gold)
+          '#20B2AA', // Warna baru untuk 'Fasilitas' (Light Sea Green)
+          '#9370DB'  // Warna baru untuk 'Dokter' (Medium Purple)
+        ],
+        borderColor: [
+          '#FF4500', // Warna border untuk 'Kebersihan' (Orange Red)
+          '#1E90FF', // Warna border untuk 'Pelayanan' (Dodger Blue)
+          '#FFA500', // Warna border untuk 'Kualitas Perawatan' (Orange)
+          '#008B8B', // Warna border untuk 'Fasilitas' (Dark Cyan)
+          '#8A2BE2'  // Warna border untuk 'Dokter' (Blue Violet)
+        ],
+        borderWidth: 2 // Mengatur ketebalan border
       }]
     },
     options: {
