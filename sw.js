@@ -1,4 +1,4 @@
-const CACHE_NAME = "kasna-cache-v1.1"; // ubah versi tiap update
+const CACHE_NAME = "kasna-cache-v1.1.1"; // ubah versi tiap update
 const urlsToCache = [
   "index.html",
   "style.css",
