@@ -24,3 +24,44 @@ new Chart(ctx, {
     }
   }
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".slide-track");
+  const slides = document.querySelectorAll(".slide");
+  const prevBtn = document.querySelector(".nav-btn.prev");
+  const nextBtn = document.querySelector(".nav-btn.next");
+
+  let index = 0;
+  const slideWidth = slides[0].offsetWidth;
+  const totalSlides = slides.length;
+
+  function showSlide() {
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+  }
+
+  function nextSlide() {
+    index++;
+    if (index >= totalSlides / 2) { // karena diduplikasi
+      index = 0;
+    }
+    showSlide();
+  }
+
+  function prevSlide() {
+    index--;
+    if (index < 0) {
+      index = totalSlides / 2 - 1;
+    }
+    showSlide();
+  }
+
+  nextBtn.addEventListener("click", nextSlide);
+  prevBtn.addEventListener("click", prevSlide);
+
+  // Auto jalan setiap 3 detik
+  setInterval(nextSlide, 3000);
+
+  // Biar responsif kalau resize
+  window.addEventListener("resize", () => {
+    showSlide();
+  });
+});

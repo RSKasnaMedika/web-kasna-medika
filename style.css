@@ -160,3 +160,79 @@ footer { background: #0066cc; color: white; padding: 15px 0; text-align: center;
   border-radius: 12px;
   overflow: hidden;
 }
+.partners {
+  padding: 50px 0;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.partners h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.logo-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.slide-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.slide img {
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(0.3);
+  transition: filter 0.3s;
+}
+
+.slide img:hover {
+  filter: grayscale(0) drop-shadow(0 0 5px #999);
+}
+
+/* Tombol navigasi */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+  z-index: 5;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-btn.prev { left: 10px; }
+.nav-btn.next { right: 10px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slide { min-width: 150px; }
+  .slide img { max-width: 120px; }
+}
+
