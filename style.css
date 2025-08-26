@@ -235,4 +235,42 @@ footer { background: #009985cc; color: white; padding: 15px 0; text-align: cente
   .slide { min-width: 150px; }
   .slide img { max-width: 120px; }
 }
+.logo-slider {
+  width: 220px; /* hanya tampil 1 logo */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  animation: slideShow 15s infinite;
+}
+
+.slide {
+  min-width: 220px;
+  opacity: 0;
+  animation: fadeSlide 15s infinite;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Animasi geser track */
+@keyframes slideShow {
+  0%, 20%   { transform: translateX(0); }
+  25%, 45%  { transform: translateX(-220px); }
+  50%, 70%  { transform: translateX(-440px); }
+  75%, 95%  { transform: translateX(-660px); }
+  100%      { transform: translateX(0); }
+}
+
+/* Efek logo muncul lalu hilang */
+@keyframes fadeSlide {
+  0%, 20%   { opacity: 1; }
+  25%, 100% { opacity: 0; }
+}
+
 
