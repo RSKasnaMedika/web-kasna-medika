@@ -1,38 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('Document Loaded');
+// Navbar Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
 
-  // Chart.js Script
-  const ctx = document.getElementById('qualityChart').getContext('2d');
-  const qualityChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Kebersihan', 'Pelayanan', 'Keamanan', 'Fasilitas'],
-      datasets: [{
-        label: 'Skor Mutu',
-        data: [85, 90, 80, 75],
-        backgroundColor: ['#FFA601', '#98FB98', '#FFA601', '#98FB98'],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
+// Chart.js Example
+const ctx = document.getElementById('qualityChart').getContext('2d');
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Pelayanan', 'Fasilitas', 'Kebersihan', 'Keamanan'],
+    datasets: [{
+      label: 'Penilaian (1-100)',
+      data: [92, 88, 95, 90],
+      backgroundColor: ['#0066cc','#ffcc00','#00cc99','#ff6600']
+    }]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      y: { beginAtZero: true }
     }
-  });
-
-  // Hamburger Menu Script
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('#nav-links');
-
-  if (hamburger) {
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navLinks.classList.toggle('show');
-    });
-  } else {
-    console.log('Hamburger menu not found');
   }
 });

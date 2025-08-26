@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,55 +8,64 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div id="logoContainer">
+  <!-- Header -->
+  <header class="header">
+    <div class="container flex-between">
+      <div class="logo">
         <a href="index.html">
-          <img src="logokasna.png" alt="RS Kasna Medika Logo" id="logo">
+          <img src="logokasna.png" alt="RS Kasna Medika Logo">
         </a>
       </div>
-      <nav id="navbar">
-        <ul id="nav-links">
-          <li><a href="index.html">Beranda</a></li>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Beranda</a></li>
           <li><a href="service.html">Layanan</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
         <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </div>
       </nav>
     </div>
   </header>
-  
-  <main>
-    <section id="hero">
-      <img src="rskasna.jpg" alt="RS Kasna Medika" id="hospitalImage">
-      <div id="hero-text">
-        <h1>Selamat Datang di RS Kasna Medika</h1>
-        <p>Memberikan pelayanan kesehatan terbaik untuk Anda dan keluarga dengan moto Peduli & Melayani.</p>
-      </div>
-    </section>
-    
-    <section id="services-preview">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <img src="rskasna.jpg" alt="RS Kasna Medika" class="hero-bg">
+    <div class="hero-text">
+      <h1>Selamat Datang di <span>RS Kasna Medika</span></h1>
+      <p>Memberikan pelayanan kesehatan terbaik untuk Anda dan keluarga <br> dengan moto <b>Peduli & Melayani</b>.</p>
+      <a href="service.html" class="btn-primary">Lihat Layanan</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <div class="container">
       <h2>Layanan Kami</h2>
       <p>Periksa layanan kesehatan kami yang berkualitas dan profesional.</p>
-      <div id="service-image">
+      <div class="service-card">
         <img src="fo.jpg" alt="Layanan RS Kasna Medika">
+        <a href="service.html" class="btn-secondary">Lihat Layanan Kami</a>
       </div>
-      <a href="service.html" id="services-link">Lihat Layanan Kami</a>
-    </section>
+    </div>
+  </section>
 
-    <section id="chart-section">
+  <!-- Chart -->
+  <section class="chart-section">
+    <div class="container">
       <h2>Penilaian Mutu Rumah Sakit</h2>
-      <canvas id="qualityChart" width="400" height="200"></canvas>
-    </section>
-  </main>
-  
+      <canvas id="qualityChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 RS Kasna Medika</p>
+    <div class="container">
+      <p>&copy; 2024 RS Kasna Medika | Peduli & Melayani</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
