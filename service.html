@@ -1,106 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RS Kasna Medika - Layanan</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div id="logoContainer">
+  <!-- Header -->
+  <header class="header">
+    <div class="container flex-between">
+      <div class="logo">
         <a href="index.html">
-          <img src="logokasna.png" alt="RS Kasna Medika Logo" id="logo">
+          <img src="logokasna.png" alt="RS Kasna Medika Logo">
         </a>
       </div>
-      <nav id="navbar">
-        <ul id="nav-links">
+      <nav class="navbar">
+        <ul class="nav-links">
           <li><a href="index.html">Beranda</a></li>
-          <li><a href="service.html">Layanan</a></li>
+          <li><a href="service.html" class="active">Layanan</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <div class="hamburger"><span></span><span></span><span></span></div>
       </nav>
     </div>
   </header>
-  
-  <main>
-    <h1>Layanan Kami</h1>
-    <section class="service">
-      <h2>A.	PELAYANAN MEDIS </h2>
-      <p>Adapun lingkup pelayanan medis di RS kasna medika sebagai berikut</p>
-    <p> 1.	Rawat Inap </p>
-    <img src="standar.jpg" alt="RS Kasna Medika" id="hospitalImage">
-    <P>Sekar Soka</P>
-    <img src="vip.jpg" alt="RS Kasna Medika" id="hospitalImage">
-    <P>Sekar Cepaka</P>
-    <img src="vvip.jpg" alt="RS Kasna Medika" id="hospitalImage">
-    <P>Sekar Kasna</P>
-<p> 2.	Rawat Jalan</p>
-    <img src="rajal.jpg" alt="RS Kasna Medika" id="hospitalImage">
-<p> 3.	Unit Gawat Darurat</p>
-<p> 4.	Bedah</p>
-<p> 5.	Dialisis </p>
-<p> 6.	Rawat Intensif.</p>
-    <img src="icu.jpg" alt="RS Kasna Medika" id="hospitalImage">
+
+  <!-- Main -->
+  <main class="container">
+    <h1 class="page-title">Layanan Kami</h1>
+
+    <!-- Pelayanan Medis -->
+    <section class="service-section">
+      <h2>A. Pelayanan Medis</h2>
+      <p>Lingkup pelayanan medis di RS Kasna Medika meliputi:</p>
+      <div class="grid-services">
+        <div class="card">
+          <img src="standar.jpg" alt="Rawat Inap Standar">
+          <h3>Rawat Inap - Sekar Soka</h3>
+        </div>
+        <div class="card">
+          <img src="vip.jpg" alt="Rawat Inap VIP">
+          <h3>Rawat Inap - Sekar Cepaka</h3>
+        </div>
+        <div class="card">
+          <img src="vvip.jpg" alt="Rawat Inap VVIP">
+          <h3>Rawat Inap - Sekar Kasna</h3>
+        </div>
+        <div class="card">
+          <img src="rajal.jpg" alt="Rawat Jalan">
+          <h3>Rawat Jalan</h3>
+        </div>
+        <div class="card">
+          <img src="icu.jpg" alt="Rawat Intensif ICU">
+          <h3>Rawat Intensif (ICU)</h3>
+        </div>
+      </div>
+      <ul class="service-list">
+        <li>Unit Gawat Darurat (UGD)</li>
+        <li>Tindakan Bedah</li>
+        <li>Layanan Dialisis</li>
+      </ul>
     </section>
-    <section class="service">
-      <h2>B.	PELAYANAN PENUNJANG MEDIS</h2>
-      <p>1.	Radiologi</p>
-      <img src="radiologi.jpg" alt="RS Kasna Medika" id="hospitalImage">
-        <p>2.	Laboratorium</p>
-        <p>3.	Anestesi </p>
-        <p>4.	Rehabilitasi medis</p>
+
+    <!-- Penunjang Medis -->
+    <section class="service-section">
+      <h2>B. Pelayanan Penunjang Medis</h2>
+      <div class="grid-services">
+        <div class="card"><img src="radiologi.jpg" alt="Radiologi"><h3>Radiologi</h3></div>
+        <div class="card"><h3>Laboratorium</h3></div>
+        <div class="card"><h3>Anestesi</h3></div>
+        <div class="card"><h3>Rehabilitasi Medis</h3></div>
+      </div>
     </section>
-    <section class="service">
-      <h2>C.	PELAYANAN PENUNJANG NON MEDIS</h2>
-        <p> 1.	Gizi</p>
-        <img src="gizi.jpg" alt="RS Kasna Medika" id="hospitalImage">
-        <p> 2.	Rekam Medis</p>
-        <p> 3.	Sanitasi</p>
-        <p> 4.	Pemulasaran Jenasah</p>
-        <img src="jenasah.jpg" alt="RS Kasna Medika" id="hospitalImage">
-        <p> 5.	Strerilisasi dan Laundri</p>
-        <img src="cssd.jpg" alt="RS Kasna Medika" id="hospitalImage">
-        <P>CSSD</P>
-        <img src="cssd2.jpg" alt="RS Kasna Medika" id="hospitalImage">
-        <P>CSSD</P>
-        <img src="laundry.jpg" alt="RS Kasna Medika" id="hospitalImage">
-        <P>Laundri</P>
-        <p> 6.	Sistem Informasi Manajemen Rumah Sakit</p>
-        <img src="SIMRS.png" alt="RS Kasna Medika" id="SIMRS">
-        <p>SIMRS</p>
+
+    <!-- Penunjang Non Medis -->
+    <section class="service-section">
+      <h2>C. Pelayanan Penunjang Non Medis</h2>
+      <div class="grid-services">
+        <div class="card"><img src="gizi.jpg" alt="Gizi"><h3>Gizi</h3></div>
+        <div class="card"><h3>Rekam Medis</h3></div>
+        <div class="card"><h3>Sanitasi</h3></div>
+        <div class="card"><img src="jenasah.jpg" alt="Pemulasaran Jenasah"><h3>Pemulasaran Jenasah</h3></div>
+        <div class="card"><img src="cssd.jpg" alt="CSSD"><h3>CSSD (Sterilisasi)</h3></div>
+        <div class="card"><img src="laundry.jpg" alt="Laundry"><h3>Laundry</h3></div>
+        <div class="card"><img src="SIMRS.png" alt="SIMRS"><h3>Sistem Informasi RS (SIMRS)</h3></div>
+      </div>
     </section>
-    <section class="service">
-        <h2>D.	JENIS PELAYANAN SPESIALIS</h2>
-        <h3> a.	SPESIALIS DASAR</h3>
-           <p> i.	Spesialis Penyakit Dalam</p>
-           <p> ii.	Spesialis Anak</p>
-           <p> iii.	Spesialis Bedah</p>
-           <p> iv.	Spesialis Obstetri Ginekologi</p>
-        <h3>  b.	SPESIALIS PENUNJANG</h3>
-           <p> i.	Spesialis Patologi Klinik</p>
-           <p> ii.	Spesialis Radiologi</p>
-           <p> iii.	Spesialis Anestesi</p>
-           <p> iv.	Spesialis Kedokteran Fisik dan Rehailitasi</p>
-        <h3>    c.	SPESIALIS LAIN</h3>
-            <p> i.	Spesialis Saraf</p>
-            <p> ii.	Spesialis Ortopedi dan Traumatologi</p>
-            <p> iii.	Spesialis Paru</p>
-             <p> iv.	Spesialis Mata</p>
-      </section>
+
+    <!-- Spesialis -->
+    <section class="service-section">
+      <h2>D. Jenis Pelayanan Spesialis</h2>
+      <h3>Spesialis Dasar</h3>
+      <ul class="service-list">
+        <li>Penyakit Dalam</li><li>Anak</li><li>Bedah</li><li>Obstetri & Ginekologi</li>
+      </ul>
+      <h3>Spesialis Penunjang</h3>
+      <ul class="service-list">
+        <li>Patologi Klinik</li><li>Radiologi</li><li>Anestesi</li><li>Kedokteran Fisik & Rehabilitasi</li>
+      </ul>
+      <h3>Spesialis Lain</h3>
+      <ul class="service-list">
+        <li>Saraf</li><li>Ortopedi & Traumatologi</li><li>Paru</li><li>Mata</li>
+      </ul>
+    </section>
   </main>
-  
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 yogista putra</p>
+    <p>&copy; 2024 RS Kasna Medika | Peduli & Melayani</p>
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 </html>

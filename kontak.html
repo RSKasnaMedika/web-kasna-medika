@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RS Kasna Medika - Kontak</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -19,34 +21,65 @@
           <li><a href="index.html">Beranda</a></li>
           <li><a href="service.html">Layanan</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="kontak.html" class="active">Kontak</a></li>
         </ul>
         <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </div>
       </nav>
     </div>
   </header>
   
   <main>
-    <h1>Kontak Kami</h1>
-    <div id="social-media">
-        <h3>Ikuti Kami di Sosial Media:</h3>
-        <h2>Facebook</h2>
-        <a href="https://facebook.com/Kasna Medika Hospital" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f">Kasna Medika Hospital</i></a>
-        <h2>Instagram</h2>
-        <a href="https://instagram.com/kasna_medikahospital" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i>Kasna_medika Hospital</a>
-        <h2>Nomor Telefon</h2>
-        <H3>(0363) 4320991 / (0363) 4320998</H3>
-        <h2>email</h2>
-        <h3>kasnamedikahospital@gmail.com</h3>
+    <section id="kontak">
+      <h1>Kontak Kami</h1>
+      <p>Hubungi kami untuk informasi lebih lanjut, pertanyaan, atau membuat janji temu.</p>
+      
+      <div class="contact-grid">
+        <!-- Form Kontak -->
+        <div class="contact-form">
+          <h2>Kirim Pesan</h2>
+          <form action="#" method="post">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Kirim</button>
+          </form>
+        </div>
+
+        <!-- Info Kontak -->
+        <div class="contact-info">
+          <h2>Informasi Kontak</h2>
+          <p><i class="fas fa-phone"></i> (0363) 4320991 / (0363) 4320998</p>
+          <p><i class="fas fa-envelope"></i> kasnamedikahospital@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Banjar Dinas Labuan Sari, Desa Tianyar Barat, Karangasem, Bali</p>
+          
+          <div class="social-links">
+            <h3>Ikuti Kami</h3>
+            <a href="https://facebook.com/KasnaMedikaHospital" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/kasna_medikahospital" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+
+          <!-- Google Maps Embed -->
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.319... (link gmaps lokasi RS)" 
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
       </div>
+    </section>
   </main>
   
   <footer>
-    <p>&copy; 2024 yogista putra</p>
+    <p>&copy; 2024 RS Kasna Medika | Developed by Yogista Putra</p>
   </footer>
   
   <script src="script.js"></script>
