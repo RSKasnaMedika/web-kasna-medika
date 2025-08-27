@@ -6,9 +6,12 @@
   <title>RS Kasna Medika - Tentang Kami</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- Header / Navbar -->
   <header class="header">
     <div class="container flex-between">
       <div class="logo">
@@ -24,24 +27,23 @@
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </nav>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
-  
+
+  <!-- Main Content -->
   <main>
     <section class="about-section">
       <h1>Tentang Kami</h1>
-      <p>
-        Rumah Sakit Kasna Medika terletak di Banjar Dinas Labuan Sari, Desa Tianyar Barat, Kecamatan Kubu, Kabupaten Karangasem. 
-        RS Kasna Medika merupakan Rumah Sakit Swasta di bawah naungan <strong>PT. Sekar Kasna Bakti</strong> yang berdiri pada 4 September 2022.
-      </p>
+      <p>Rumah Sakit Kasna Medika terletak di Banjar Dinas Labuan Sari, Desa Tianyar Barat, Kecamatan Kubu, Kabupaten Karangasem. RS Kasna Medika merupakan Rumah Sakit Swasta di bawah naungan <strong>PT. Sekar Kasna Bakti</strong> yang berdiri pada 4 September 2022.</p>
       <div class="about-image">
-        <img src="rskasna.jpg" alt="RS Kasna Medika" id="hospitalImage">
+        <img src="rskasna.jpg" alt="RS Kasna Medika">
       </div>
-      <p>
-        Pendirian rumah sakit ini bertujuan untuk meningkatkan akses masyarakat terhadap pelayanan kesehatan yang berkualitas, terutama pelayanan medik spesialistik. 
-        Di beberapa wilayah Bali Timur dan Utara (Karangasem, Bangli, Buleleng), akses terhadap layanan medis masih terbatas. 
-        Dengan hadirnya RS Kasna Medika, masyarakat setempat kini dapat memperoleh layanan kesehatan tanpa harus menempuh perjalanan jauh ke kota besar.
-      </p>
+      <p>Pendirian rumah sakit ini bertujuan untuk meningkatkan akses masyarakat terhadap pelayanan kesehatan yang berkualitas, terutama pelayanan medik spesialistik. Di beberapa wilayah Bali Timur dan Utara (Karangasem, Bangli, Buleleng), akses terhadap layanan medis masih terbatas. Dengan hadirnya RS Kasna Medika, masyarakat setempat kini dapat memperoleh layanan kesehatan tanpa harus menempuh perjalanan jauh ke kota besar.</p>
     </section>
 
     <section class="about-section">
@@ -62,31 +64,22 @@
       <h2>Motto</h2>
       <p><em>“Peduli dan Melayani”</em></p>
     </section>
+
+    <!-- Chart Mutu -->
+    <section class="chart-section">
+      <div class="chart-container">
+        <h2>Penilaian Mutu Rumah Sakit</h2>
+        <canvas id="qualityChart"></canvas>
+      </div>
+    </section>
   </main>
 
-  <!-- Chart -->
-<section class="chart-section">
-  <div class="container">
-    <h2>Penilaian Mutu Rumah Sakit</h2>
-    <canvas id="qualityChart" width="400" height="200"></canvas>
-  </div>
-</section>
-
-<!-- Chart.js -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="script.js"></script>
-
-
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Yogista Putra</p>
   </footer>
 
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js").then(() => {
-        console.log("Service Worker aktif 🚀");
-      });
-    }
-  </script>
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>
