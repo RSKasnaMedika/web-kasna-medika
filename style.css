@@ -89,18 +89,18 @@ body {
   margin-bottom: 15px; 
 }
 .hero-text span { 
-  color: #000000; 
+  color: #ffcc00; 
 }
 .hero-text p { 
   font-size: 1.2rem; 
   margin-bottom: 20px; 
 }
 .btn-primary { 
-  background: #000000; 
+  background: #ffcc00; 
   padding: 12px 25px; 
   border-radius: 30px; 
   text-decoration: none; 
-  color: #333; 
+  color: #000000; 
   font-weight: 600; 
   transition: 0.3s; 
 }
