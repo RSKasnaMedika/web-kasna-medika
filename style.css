@@ -5,7 +5,7 @@ body { color: #333; background: #f9f9f9; }
 .flex-between { display: flex; justify-content: space-between; align-items: center; }
 
 /* Header */
-.header { background: hsl(162, 100%, 47%); padding: 15px 0; position: sticky; top: 0; z-index: 999; }
+.header { background: #00f0a8; padding: 15px 0; position: sticky; top: 0; z-index: 999; }
 .logo img { height: 60px; }
 .nav-links { list-style: none; display: flex; gap: 20px; }
 .nav-links li a { text-decoration: none; color: white; font-weight: 500; transition: 0.3s; }
@@ -16,7 +16,7 @@ body { color: #333; background: #f9f9f9; }
 /* Hero */
 .hero { position: relative; height: 85vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
 .hero-bg { position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
-.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 102, 204, 0.5); z-index: -1; }
+.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #00f0a8(0, 102, 204, 0.5); z-index: -1; }
 .hero-text h1 { font-size: 3rem; margin-bottom: 15px; }
 .hero-text span { color: #ffcc00; }
 .hero-text p { font-size: 1.2rem; margin-bottom: 20px; }
@@ -25,22 +25,22 @@ body { color: #333; background: #f9f9f9; }
 
 /* Services */
 .services { padding: 60px 0; text-align: center; }
-.services h2 { font-size: 2rem; margin-bottom: 10px; color: #0066cc; }
+.services h2 { font-size: 2rem; margin-bottom: 10px; color: #00f0a8; }
 .service-card { margin-top: 20px; }
 .service-card img { max-width: 500px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-.btn-secondary { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #0066cc; color: white; border-radius: 25px; text-decoration: none; transition: 0.3s; }
+.btn-secondary { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #00f0a8; color: white; border-radius: 25px; text-decoration: none; transition: 0.3s; }
 .btn-secondary:hover { background: rgb(0, 153, 133); }
 
 /* Chart */
 .chart-section { padding: 60px 0; background: #fff; text-align: center; }
-.chart-section h2 { font-size: 2rem; margin-bottom: 20px; color: #0066cc; }
+.chart-section h2 { font-size: 2rem; margin-bottom: 20px; color: #00f0a8; }
 
 /* Footer */
-footer { background: #0066cc; color: white; padding: 15px 0; text-align: center; margin-top: 50px; }
+footer { background: #00f0a8; color: white; padding: 15px 0; text-align: center; margin-top: 50px; }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .nav-links { display: none; flex-direction: column; background: #0066cc; position: absolute; top: 70px; right: 0; width: 200px; padding: 20px; }
+  .nav-links { display: none; flex-direction: column; background: #00f0a8; position: absolute; top: 70px; right: 0; width: 200px; padding: 20px; }
   .nav-links.show { display: flex; }
   .hamburger { display: flex; }
   .hero-text h1 { font-size: 2.2rem; }
@@ -50,13 +50,13 @@ footer { background: #0066cc; color: white; padding: 15px 0; text-align: center;
   text-align: center;
   margin: 40px 0;
   font-size: 2.2rem;
-  color: #0066cc;
+  color: #00f0a8;
   font-weight: 700;
 }
 
 /* Service Sections */
 .service-section { margin-bottom: 60px; }
-.service-section h2 { color: #0066cc; margin-bottom: 20px; border-left: 5px solid #ffcc00; padding-left: 10px; }
+.service-section h2 { color: #00f0a8; margin-bottom: 20px; border-left: 5px solid #ffcc00; padding-left: 10px; }
 .service-section h3 { margin-top: 20px; color: #444; }
 
 /* Grid Services */
@@ -82,7 +82,7 @@ footer { background: #0066cc; color: white; padding: 15px 0; text-align: center;
   margin-bottom: 10px;
 }
 .card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
-.card h3 { color: #0066cc; font-size: 1.1rem; }
+.card h3 { color: #00f0a8; font-size: 1.1rem; }
 
 /* Service List */
 .service-list {
@@ -131,7 +131,7 @@ footer { background: #0066cc; color: white; padding: 15px 0; text-align: center;
 }
 
 .contact-form form button {
-  background: #0077cc;
+  background: #00f0a8;
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -141,18 +141,18 @@ footer { background: #0066cc; color: white; padding: 15px 0; text-align: center;
 }
 
 .contact-form form button:hover {
-  background: #005fa3;
+  background: #00f0a8;
 }
 
 .social-links a {
   margin: 0 10px;
   font-size: 22px;
-  color: #0077cc;
+  color: #00f0a8;
   transition: 0.3s;
 }
 
 .social-links a:hover {
-  color: #005fa3;
+  color: #00f0a8;
 }
 
 .map-container {
