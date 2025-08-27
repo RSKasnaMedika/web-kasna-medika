@@ -29,7 +29,7 @@ body {
   z-index: 999; 
 }
 ..logo img {
-  max-height: 100px;
+  max-height: 75px;
   width: auto; /* biar tidak gepeng */
 }
 
