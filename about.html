@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RS Kasna Medika - Layanan</title>
+  <title>RS Kasna Medika - Tentang Kami</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -19,11 +19,10 @@
       <nav class="navbar">
         <ul class="nav-links">
           <li><a href="index.html">Beranda</a></li>
-          <li><a href="service.html" class="active">Layanan</a></li>
-          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="service.html">Layanan</a></li>
+          <li><a href="about.html" class="active">Tentang Kami</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
-        <div class="hamburger"><span></span><span></span><span></span></div>
       </nav>
     </div>
   </header>
@@ -64,31 +63,29 @@
       <p><em>“Peduli dan Melayani”</em></p>
     </section>
   </main>
-<!-- Chart -->
-<section class="chart-section">
-  <div class="container">
-    <h2>Penilaian Mutu Rumah Sakit</h2>
-    <canvas id="qualityChart"></canvas>
-  </div>
-</section>
 
-<!-- Chart.js CDN -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<!-- File script kamu -->
-<script src="script.js"></script>
+  <!-- Chart -->
+  <section class="chart-section">
+    <div class="container">
+      <h2>Penilaian Mutu Rumah Sakit</h2>
+      <canvas id="qualityChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
 
   <footer>
     <p>&copy; 2024 Yogista Putra</p>
   </footer>
-  
-  <script src="script.js"></script>
+
   <script>
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("sw.js").then(() => {
         console.log("Service Worker aktif 🚀");
       });
     }
-    </script>
-
+  </script>
 </body>
 </html>
