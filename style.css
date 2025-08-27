@@ -87,6 +87,7 @@ body {
 .hero-text h1 { 
   font-size: 3rem; 
   margin-bottom: 15px; 
+  color: #000000;
 }
 .hero-text span { 
   color: #ffcc00; 
