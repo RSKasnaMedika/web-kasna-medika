@@ -38,13 +38,13 @@ body {
 }
 .nav-links li a { 
   text-decoration: none; 
-  color: rgb(0, 0, 0); 
+  color: #000000; 
   font-weight: 500; 
   transition: 0.3s; 
 }
 .nav-links li a:hover, 
 .nav-links .active { 
-  color: rgb(0, 0, 0); 
+  color: #ffcc00; 
 }
 .hamburger { 
   display: none; 
@@ -55,7 +55,7 @@ body {
 .hamburger span { 
   width: 25px; 
   height: 3px; 
-  background: rgb(0, 0, 0); 
+  background: white; 
 }
 
 /* ================== HERO ================== */
@@ -66,7 +66,7 @@ body {
   align-items: center; 
   justify-content: center; 
   text-align: center; 
-  color: rgb(0, 0, 0); 
+  color: white; 
 }
 .hero-bg { 
   position: absolute; 
@@ -131,7 +131,7 @@ body {
   margin-top: 15px; 
   padding: 10px 20px; 
   background: #00f0a8; 
-  color: rgb(0, 0, 0); 
+  color: white; 
   border-radius: 25px; 
   text-decoration: none; 
   transition: 0.3s; 
@@ -143,7 +143,7 @@ body {
 /* ================== CHART ================== */
 .chart-section { 
   padding: 60px 0; 
-  background: rgb(0, 0, 0); 
+  background: #fff; 
   text-align: center; 
 }
 .chart-section h2 { 
@@ -155,7 +155,7 @@ body {
 /* ================== FOOTER ================== */
 footer { 
   background: #00f0a8; 
-  color: rgb(0, 0, 0); 
+  color: #000000; 
   padding: 15px 0; 
   text-align: center; 
   margin-top: 50px; 
@@ -193,7 +193,7 @@ footer {
   margin-top: 20px;
 }
 .card {
-  background: rgb(0, 0, 0);
+  background: #fff;
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
@@ -230,7 +230,7 @@ footer {
 /* ================== CONTACT ================== */
 #kontak {
   padding: 50px 20px;
-  background: rgb(0, 0, 0);
+  background: #f9f9f9;
   text-align: center;
 }
 .contact-grid {
@@ -241,7 +241,7 @@ footer {
 }
 .contact-form, 
 .contact-info {
-  background: rgb(172, 171, 171);
+  background: #fff;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -253,11 +253,11 @@ footer {
   padding: 12px;
   margin: 10px 0;
   border-radius: 8px;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #ccc;
 }
 .contact-form form button {
   background: #00f0a8;
-  color: rgb(253, 195, 2);
+  color: #fff;
   padding: 12px 20px;
   border: none;
   border-radius: 8px;
@@ -285,7 +285,7 @@ footer {
 /* ================== PARTNERS / SLIDER ================== */
 .partners {
   padding: 40px 0;
-  background:rgb(253, 195, 2);
+  background: #f9f9f9;
   text-align: center;
 }
 .partners h2 {
