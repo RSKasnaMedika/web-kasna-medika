@@ -28,7 +28,7 @@ body {
   top: 0; 
   z-index: 999; 
 }
-..logo img {
+.logo img {
   max-height: 75px;
   width: auto; /* biar tidak gepeng */
 }
