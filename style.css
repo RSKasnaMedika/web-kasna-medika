@@ -210,13 +210,22 @@ body {
   color: #00f0a8; 
 }
 #qualityChart {
-  max-width: 700px;
+  max-width: 400px;   /* dari 700px jadi lebih kecil */
+  height: 250px;      /* atur tinggi supaya proporsional */
   margin: auto;
   background: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+@media (max-width: 600px) {
+  #qualityChart {
+    max-width: 300px;
+    height: 200px;
+    padding: 10px;
+  }
+}
+
 
 /* ================== FOOTER ================== */
 footer { 
