@@ -257,7 +257,7 @@ footer {
 }
 .contact-form form button {
   background: #00f0a8;
-  color: rgb(0, 0, 0);
+  color: rgb(253, 195, 2);
   padding: 12px 20px;
   border: none;
   border-radius: 8px;
@@ -285,7 +285,7 @@ footer {
 /* ================== PARTNERS / SLIDER ================== */
 .partners {
   padding: 40px 0;
-  background:rgb(0, 0, 0);
+  background:rgb(253, 195, 2);
   text-align: center;
 }
 .partners h2 {
