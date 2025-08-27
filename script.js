@@ -6,9 +6,11 @@ hamburger.addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const ctx = document.getElementById('qualityChart');
-  if (ctx) { // supaya tidak error di halaman lain yg ga ada chart
-    new Chart(ctx.getContext('2d'), {
+  const canvas = document.getElementById("qualityChart");
+  if (canvas) {
+    const ctx = canvas.getContext("2d");
+
+    new Chart(ctx, {
       type: 'bar',
       data: {
         labels: ['Pelayanan', 'Fasilitas', 'Kebersihan', 'Keamanan'],
@@ -20,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       options: {
         responsive: true,
+        maintainAspectRatio: false, // biar fleksibel
         scales: {
           y: { beginAtZero: true }
         }
@@ -27,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector(".slide-track");
