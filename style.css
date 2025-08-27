@@ -89,14 +89,14 @@ body {
   margin-bottom: 15px; 
 }
 .hero-text span { 
-  color: #ffcc00; 
+  color: #000000; 
 }
 .hero-text p { 
   font-size: 1.2rem; 
   margin-bottom: 20px; 
 }
 .btn-primary { 
-  background: #ffcc00; 
+  background: #000000; 
   padding: 12px 25px; 
   border-radius: 30px; 
   text-decoration: none; 
