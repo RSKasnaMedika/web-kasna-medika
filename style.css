@@ -531,25 +531,24 @@ footer {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  padding: 10px;
-  transition: transform 0.2s;
-}
-
-.doctor-card:hover {
-  transform: translateY(-5px);
+  overflow: hidden;   /* biar foto tidak keluar dari card */
+  display: flex;
+  flex-direction: column; /* urut: foto di atas, teks di bawah */
 }
 
 .doctor-card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 8px;
+  height: 100%;
+  object-fit: cover;  /* foto penuh */
+  flex: 1;            /* foto memenuhi ruang card */
+  display: block;
 }
 
 .doctor-card p {
+  background: #fff;   /* latar teks putih */
+  padding: 10px;
   font-size: 0.95rem;
   font-weight: 600;
   color: #444;
+  text-align: center;
 }
