@@ -537,10 +537,9 @@ footer {
 }
 
 .doctor-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* foto penuh */
-  flex: 1;            /* foto memenuhi ruang card */
+  width: 100%;      /* lebar penuh mengikuti card */
+  height: auto;     /* tinggi menyesuaikan ukuran asli */
+  object-fit: contain; /* jaga proporsi foto (tidak terpotong) */
   display: block;
 }
 
